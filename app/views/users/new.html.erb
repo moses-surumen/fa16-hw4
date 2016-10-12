@@ -1,0 +1,19 @@
+<form action="/users" method="POST">
+	<label>Username</label>
+	<input type="text" name="user_name"></input>
+
+	<label>Email</label>
+	<input type="text" name="Email" ></input>
+	
+	<label>Age</label>
+	<input type="text" name="age"></input>
+
+	<label>Created At</label>
+	<input type="text" name="created_at" ></input>
+
+	<label>Updated At</label>
+	<input type="text" name="updated_at" ></input>
+
+	<%= hidden_field_tag :authenticity_token, form_authenticity_toke %>
+	<button type="submit">Create User</button>
+</form>

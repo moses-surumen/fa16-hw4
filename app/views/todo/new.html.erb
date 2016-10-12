@@ -1,0 +1,19 @@
+<form action="/todo" method="POST">
+	<label>Tasks</label>
+	<input type="text" name="tasks"></input>
+
+	<label>Finished</label>
+	<input type="text" name="email"></input>
+	
+	<label>Created At</label>
+	<input type="text" name="created_at"></input>
+
+	<label>Updated At</label>
+	<input type="text" name="id"></input>
+
+	<label>Id</label>
+	<input type="text" name="id"></input>
+
+	<%= hidden_field_tag :authenticity_token, form_authenticity_toke %>
+	<button type="submit">Create User</button>
+</form>
